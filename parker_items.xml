@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+        <name>Items</name>
+		<update version="0.0.3">
+			<file name="parker_items.xml"/>
+		</update>
+	</info>
+	<element name="Wand of True Polymorph" type="Magic Item" source="Finethir Shinebright">
+		<description>
+			<p>Formed of a long, thin twig taken from an oak tree, this wand holds 1d4-1 charges of True Polymorph, with a minimum of 1. These can be cast by anybody with a spellcasting ability who has spent at least one hour attuning to the wand. The amount of charges resets at dawn each day.</p>
+			<p>A DC 15 Intelligence (Arcana) check will reveal that the modifications have left the wand extremely unreliable. Each time a charge is used the user must pass a DC 17 Intelligence (Arcana) check. If they succeed, the spell casts normally and the DC needed to use it permanently increases by 1.</p>
+			<p>If they fail by five or less, the spell will transmute the target into a Gibbering Mouther - a hideous lump of seemingly random limbs, organs and facial features. The creature will attack the nearest target mindlessly, babbling in dozens of broken voices.</p>
+			<p>This transformation cannot be undone by any spell lower than 9th level and cannot be cancelled by ending concentration. The target can make a saving throw against this effect in the same way they would against a regular casting of True Polymorph.</p>
+			<p>If they fail by more than five, in addition to the above consequences the wand explodes violently, dealing 1d12 force damage to all creatures within 10 ft for each charge remaining in the wand. This destroys the wand.</p>
+			<p>Modified: Reducing the transformed target to zero hit points will not revert it to its original form unlike the standard effects of True Polymorph. This was a byproduct effect that occurred during it's creation. In order to revert the transformed target back to its original form, an additional use of the wand must be expended.If the target was transformed into a creature and it it is not reverted, it will live out the standard lifespan of that creature unless it is otherwise killed.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="charges">1d4-1 (min 1, resets daily at dawn)</set>
+		</setters>
+	</element>
+</elements>
